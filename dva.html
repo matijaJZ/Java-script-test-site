@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Što JavaScript može napraviti?</h2>
+    <p>JavaScript može mijenjati HTML atribute!</p>
+    <p id="tekst">U ovom slučaju mijenja sliku</p>
+    <img src="images/pic_bulbon.gif" alt="ukljucena lampa" id="my_img" />
+    <button
+      type="button"
+      onClick="document.getElementById('my_img').src='images/pic_bulbon.gif'"
+    >
+      Ukljuci lampu
+    </button>
+    <button
+      type="button"
+      onClick="document.getElementById('my_img').src='images/pic_bulboff.gif'"
+    >
+      Iskljuci lampu
+    </button>
+    <button
+      type="button"
+      onClick="document.getElementById('tekst').style.fontSize='35px'"
+    >
+      Promijeni font na 35px
+    </button>
+    <button
+      type="button"
+      onClick="document.getElementById('tekst').style.fontSize='15px'"
+    >
+      Promijeni font na 15px
+    </button>
+  </body>
+</html>
